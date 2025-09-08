@@ -23,7 +23,6 @@ DW/
 ├── script.js       # Lógica JavaScript
 └── README.md       # Este archivo
 ```
-
 ## 🛠️ Instalación
 
 ### Requisitos Previos
@@ -74,7 +73,6 @@ npx http-server
 # Con PHP
 php -S localhost:8000
 ```
-
 Luego visita: `http://localhost:8000`
 
 ## 🧪 Cómo Probar el Formulario
