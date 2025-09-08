@@ -49,6 +49,7 @@ DW/
 3. El formulario se abrirá automáticamente en tu navegador predeterminado
 
 ### Método 2: Desde la terminal
+
 ```bash
 # En Windows
 start index.html
@@ -72,6 +73,7 @@ npx http-server
 
 # Con PHP
 php -S localhost:8000
+
 ```
 Luego visita: `http://localhost:8000`
 
