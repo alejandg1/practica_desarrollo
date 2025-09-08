@@ -1,12 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
+	const button = document.getElementById('send');
 	const form = document.querySelector('form');
-	if (!form) return;
+	if (!button || !form) return;
 
-	form.addEventListener('submit', function(e) {
-		const email = form.querySelector('input[type="email"]');
-		const password = form.querySelector('input[type="password"]');
+	button.addEventListener('click', function(e) {
+		e.preventDefault();
+		const email = document.getElementById('mail');
+		const password = document.getElementById('password');
 		let valid = true;
 
+		// Validar correo no vacío y formato correcto
 		if (!email.value) {
 			alert('El correo no puede estar vacío.');
 			valid = false;
@@ -15,13 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
 			valid = false;
 		}
 
+		// Validar contraseña mínimo 8 caracteres
 		if (!password.value || password.value.length < 8) {
 			alert('La contraseña debe tener al menos 8 caracteres.');
 			valid = false;
 		}
 
-		if (!valid) {
-			e.preventDefault();
+		if (valid) {
+			alert('Formulario válido. ¡Datos listos para enviar!');
 		}
 	});
 });
