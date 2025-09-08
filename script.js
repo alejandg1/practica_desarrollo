@@ -1,4 +1,3 @@
-// Validaciones básicas de correo y contraseña
 document.addEventListener('DOMContentLoaded', function() {
 	const form = document.querySelector('form');
 	if (!form) return;
@@ -8,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		const password = form.querySelector('input[type="password"]');
 		let valid = true;
 
-		// Validar correo no vacío y formato correcto
 		if (!email.value) {
 			alert('El correo no puede estar vacío.');
 			valid = false;
@@ -17,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			valid = false;
 		}
 
-		// Validar contraseña mínimo 8 caracteres
 		if (!password.value || password.value.length < 8) {
 			alert('La contraseña debe tener al menos 8 caracteres.');
 			valid = false;
