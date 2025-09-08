@@ -1,11 +1,12 @@
-// Validaciones básicas de correo y contraseña
 document.addEventListener('DOMContentLoaded', function() {
+	const button = document.getElementById('send');
 	const form = document.querySelector('form');
-	if (!form) return;
+	if (!button || !form) return;
 
-	form.addEventListener('submit', function(e) {
-		const email = form.querySelector('input[type="email"]');
-		const password = form.querySelector('input[type="password"]');
+	button.addEventListener('click', function(e) {
+		e.preventDefault();
+		const email = document.getElementById('mail');
+		const password = document.getElementById('password');
 		let valid = true;
 
 		// Validar correo no vacío y formato correcto
@@ -23,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			valid = false;
 		}
 
-		if (!valid) {
-			e.preventDefault();
+		if (valid) {
+			alert('Formulario válido. ¡Datos listos para enviar!');
 		}
 	});
 });
