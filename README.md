@@ -17,7 +17,7 @@ Este es un proyecto de formulario de registro desarrollado con **HTML5**, **CSS3
 ## 📁 Estructura del Proyecto
 
 ```
-DW/
+root/
 ├── index.html      # Archivo principal HTML
 ├── style.css       # Estilos CSS
 ├── script.js       # Lógica JavaScript
