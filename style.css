@@ -1,4 +1,3 @@
-/* General */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -6,18 +5,17 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
 }
 
-/* Título del formulario */
 #formulario {
     text-align: center;
     font-size: 2rem;
     color: #333;
 }
 
-/* Estilo del formulario */
 form {
     background-color: #fff;
     padding: 20px;
@@ -28,19 +26,16 @@ form {
     box-sizing: border-box;
 }
 
-/* Lista del formulario */
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-/* Elementos de lista */
 li {
     margin-bottom: 15px;
 }
 
-/* Etiquetas de los campos */
 label {
     font-size: 14px;
     font-weight: bold;
@@ -49,7 +44,6 @@ label {
     margin-bottom: 5px;
 }
 
-/* Estilo para los inputs */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -61,7 +55,6 @@ input[type="password"] {
     box-sizing: border-box;
 }
 
-/* Estilo del botón */
 button {
     background-color: #007bff;
     color: #fff;
@@ -74,12 +67,10 @@ button {
     transition: background-color 0.3s;
 }
 
-/* Efecto hover del botón */
 button:hover {
     background-color: #0056b3;
 }
 
-/* Estilos responsivos para pantallas pequeñas */
 @media screen and (max-width: 600px) {
     form {
         width: 90%;
