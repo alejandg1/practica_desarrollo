@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practica experimental 1</title>
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/script.js">
+
 </head>
 
 <body>
@@ -21,11 +21,18 @@
       <input type="email" id="mail" name="user_mail" />
     </li>
     <li>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="user_password" />
+    </li>
+    <li>
       <label for="msg">Mensaje:</label>
       <textarea id="msg" name="user_message"></textarea>
     </li>
+    <li>
+      <button id="send" type="button">Enviar</button>
+    </li>
   </ul>
 </form>
-
+  <script src="script.js"></script>
 </body>
 </html>
